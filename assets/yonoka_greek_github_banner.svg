@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" width="1600" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17130e"/>
+      <stop offset="0.48" stop-color="#3b2a18"/>
+      <stop offset="1" stop-color="#120f0b"/>
+    </linearGradient>
+    <linearGradient id="bronze" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2d18b"/>
+      <stop offset="0.45" stop-color="#b8863b"/>
+      <stop offset="1" stop-color="#68451e"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5d58c" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#b77b31" stop-opacity=".05"/>
+    </linearGradient>
+    <pattern id="meander" width="80" height="30" patternUnits="userSpaceOnUse">
+      <path d="M0 5h25v20h25V5h25" fill="none" stroke="#c49a55" stroke-width="4"/>
+    </pattern>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity=".65"/>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="600" fill="url(#bg)"/>
+  <circle cx="1160" cy="185" r="190" fill="url(#sun)" opacity=".55" filter="url(#soft)"/>
+  <circle cx="1160" cy="185" r="82" fill="#d7a64f" opacity=".18"/>
+
+  <!-- Distant mountains -->
+  <path d="M0 390 L180 245 L300 350 L470 205 L650 370 L820 235 L1010 365 L1170 250 L1360 365 L1510 230 L1600 300 V500 H0Z"
+        fill="#17120d" opacity=".9"/>
+  <path d="M0 430 L210 320 L355 405 L510 300 L690 420 L850 315 L1030 420 L1200 330 L1390 420 L1540 320 L1600 350 V520 H0Z"
+        fill="#261b11" opacity=".9"/>
+
+  <!-- Temple -->
+  <g transform="translate(1120 285)" fill="none" stroke="#b98b48" stroke-width="8" opacity=".72">
+    <path d="M0 20 L120 -35 L240 20"/>
+    <path d="M20 20 H220"/>
+    <path d="M35 30 V145 M75 30 V145 M115 30 V145 M155 30 V145 M195 30 V145"/>
+    <path d="M10 145 H230"/>
+    <path d="M0 160 H240"/>
+  </g>
+
+  <!-- Greek meander borders -->
+  <rect x="18" y="18" width="1564" height="564" rx="8" fill="none" stroke="#d0a35d" stroke-width="4"/>
+  <rect x="30" y="30" width="1540" height="540" rx="5" fill="none" stroke="#694a25" stroke-width="2"/>
+  <rect x="40" y="42" width="1520" height="28" fill="url(#meander)" opacity=".9"/>
+  <rect x="40" y="530" width="1520" height="28" fill="url(#meander)" opacity=".9"/>
+
+  <!-- Macedonian sun -->
+  <g transform="translate(136 150)" stroke="#d8ad61" fill="none" stroke-width="7" opacity=".88">
+    <circle r="42"/>
+    <circle r="17" fill="#d8ad61"/>
+    <g>
+      <path d="M0-76V-52 M0 52V76 M-76 0H-52 M52 0H76"/>
+      <path d="M-54-54L-37-37 M37 37L54 54 M54-54L37-37 M-37 37L-54 54"/>
+      <path d="M-29-70L-20-48 M29-70L20-48 M70-29L48-20 M70 29L48 20 M29 70L20 48 M-29 70L-20 48 M-70 29L-48 20 M-70-29L-48-20"/>
+    </g>
+  </g>
+
+  <!-- Laurel branches -->
+  <g fill="none" stroke="#b88a43" stroke-width="4" opacity=".8">
+    <path d="M100 440 C170 385 245 385 315 440"/>
+    <path d="M128 425 l-22-20 M151 412 l-18-24 M177 404 l-13-27 M205 401 l-7-28 M235 405 l2-28 M264 414 l10-25 M291 428 l18-21"/>
+    <path d="M128 425 l-6 27 M151 412 l-2 29 M177 404 l6 28 M205 401 l11 26 M235 405 l17 23 M264 414 l20 17 M291 428 l22 10"/>
+  </g>
+
+  <!-- Warrior silhouette -->
+  <g transform="translate(350 105)" fill="#100d09" stroke="#bd914c" stroke-width="5" filter="url(#shadow)">
+    <!-- horse -->
+    <path d="M95 345 C30 320 22 260 68 224 C105 195 180 215 223 257
+             C260 292 302 318 365 312 C398 309 415 329 400 351
+             C365 379 296 378 239 354 C190 334 145 361 95 345Z"/>
+    <path d="M250 260 C238 210 262 169 302 148 C337 130 368 153 360 191
+             L345 256 L315 277 Z"/>
+    <path d="M355 158 C386 138 419 141 438 162 C420 175 400 179 376 173"/>
+    <path d="M333 151 C346 125 363 107 382 94 C397 111 402 132 396 153"/>
+    <path d="M90 335 C68 372 61 401 75 430 M208 348 C193 385 191 408 202 438
+             M320 343 C312 380 315 408 332 433 M392 340 C397 374 410 394 432 408"/>
+    <!-- rider -->
+    <circle cx="190" cy="92" r="43"/>
+    <path d="M156 78 Q187 32 229 70 L244 94 L222 88 L206 66 L177 84 Z"/>
+    <path d="M164 128 L145 206 L186 268 L228 214 L218 132 Z"/>
+    <path d="M148 152 L92 205 L108 222 L177 183"/>
+    <path d="M220 147 L285 92 L298 110 L235 183"/>
+    <path d="M181 257 L160 323 L188 330 L216 273"/>
+    <path d="M225 249 L247 317 L275 311 L250 235"/>
+    <!-- spear -->
+    <path d="M285 92 L360 -20" fill="none"/>
+    <path d="M352 -31 L370 -12 L355 -2 Z" fill="#bd914c"/>
+    <!-- shield -->
+    <circle cx="117" cy="187" r="52" fill="#21170e"/>
+    <circle cx="117" cy="187" r="42" fill="none"/>
+    <path d="M117 150 V224 M80 187 H154 M91 161 L143 213 M143 161 L91 213"/>
+  </g>
+
+  <!-- Main title panel -->
+  <g transform="translate(760 125)">
+    <text x="0" y="0" fill="#dcb46c" font-family="Georgia, serif" font-size="20" letter-spacing="7">MACEDONIA • HELLAS • CODE</text>
+    <text x="0" y="105" fill="#f0d18f" font-family="Georgia, serif" font-size="88" font-weight="bold" letter-spacing="8">YONOKA</text>
+    <path d="M2 128 H600" stroke="#b98b48" stroke-width="3"/>
+    <text x="2" y="174" fill="#d8bd87" font-family="Georgia, serif" font-size="28" letter-spacing="4">C++ DEVELOPER  •  GAME DEVELOPER</text>
+    <text x="2" y="225" fill="#a98a5a" font-family="Georgia, serif" font-size="21" letter-spacing="2">BUILDING GAMES • GRAPHICS • WORLDS</text>
+  </g>
+
+  <!-- Greek key side ornament -->
+  <g fill="none" stroke="#b88b4b" stroke-width="4" opacity=".7">
+    <path d="M720 260 h25 v25 h-25 v25 h25 v25 h-25 v25 h25 v25 h-25 v25 h25"/>
+    <path d="M1510 260 h-25 v25 h25 v25 h-25 v25 h25 v25 h-25 v25 h25 v25 h-25"/>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(790 460)">
+    <path d="M0 0 H650" stroke="#765226" stroke-width="2"/>
+    <text x="0" y="42" fill="#d2ac68" font-family="Georgia, serif" font-size="24" letter-spacing="3">BUILD • LEARN • CONQUER</text>
+    <text x="0" y="76" fill="#96764a" font-family="Georgia, serif" font-size="17">A modern developer with an ancient aesthetic.</text>
+  </g>
+
+  <!-- Spear decoration -->
+  <g transform="translate(1450 120)" stroke="#c29a58" fill="none" stroke-width="4" opacity=".75">
+    <path d="M0 0 L0 260"/>
+    <path d="M0 0 L-15 30 L15 30 Z" fill="#c29a58"/>
+    <path d="M-32 78 Q0 50 32 78 Q0 106 -32 78Z"/>
+  </g>
+
+  <!-- subtle texture lines -->
+  <g opacity=".09" stroke="#f2d59a">
+    <path d="M0 90 H1600 M0 145 H1600 M0 205 H1600 M0 265 H1600 M0 325 H1600 M0 385 H1600 M0 445 H1600 M0 505 H1600"/>
+  </g>
+</svg>
